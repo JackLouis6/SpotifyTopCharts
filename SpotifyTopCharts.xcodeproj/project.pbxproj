@@ -13,6 +13,7 @@
 		3F0032FD27AC407200BB09D7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F0032FC27AC407200BB09D7 /* Preview Assets.xcassets */; };
 		3F00330827AC407200BB09D7 /* SpotifyTopChartsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F00330727AC407200BB09D7 /* SpotifyTopChartsTests.swift */; };
 		3F00331327AC407200BB09D7 /* SpotifyTopChartsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F00331227AC407200BB09D7 /* SpotifyTopChartsUITests.swift */; };
+		3FDB860D27AC597900A95D9B /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDB860C27AC597800A95D9B /* SwiftyJSON.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		3F00330E27AC407200BB09D7 /* SpotifyTopChartsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SpotifyTopChartsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3F00331227AC407200BB09D7 /* SpotifyTopChartsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpotifyTopChartsUITests.swift; sourceTree = "<group>"; };
 		3F00331427AC407200BB09D7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3FDB860C27AC597800A95D9B /* SwiftyJSON.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SwiftyJSON.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 			children = (
 				3F0032F527AC406B00BB09D7 /* SpotifyTopChartsApp.swift */,
 				3F0032F727AC406B00BB09D7 /* ContentView.swift */,
+				3FDB860C27AC597800A95D9B /* SwiftyJSON.swift */,
 				3F0032F927AC407200BB09D7 /* Assets.xcassets */,
 				3F0032FE27AC407200BB09D7 /* Info.plist */,
 				3F0032FB27AC407200BB09D7 /* Preview Content */,
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3FDB860D27AC597900A95D9B /* SwiftyJSON.swift in Sources */,
 				3F0032F827AC406B00BB09D7 /* ContentView.swift in Sources */,
 				3F0032F627AC406B00BB09D7 /* SpotifyTopChartsApp.swift in Sources */,
 			);
