@@ -13,14 +13,17 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             List(songs) { song in
-                NavigationLink(
-                    destination: Text(song.track_url)
-                        .padding(),
-                    label: {
-                        Text(song.position); Text("-")
+                if let url = URL(string: song.track_url) {
+                    Link(destination: url) {
+                    HStack {
+                        Text(song.position)
+                        Text("-")
                         Text(song.track_title)
-                        Text("Streams:"); Text(song.streams)
-                    })
+                        Text("Streams:")
+                        Text(song.streams)
+                        }
+                    }
+                }
             }
             .navigationTitle("Spotify Top Charts")
         }
@@ -29,7 +32,7 @@ struct ContentView: View {
         })
         .alert(isPresented: $showingAlert, content: {
             Alert(title: Text("Loading Error"),
-                  message: Text("There was a problem loading the data"),
+                  message: Text("There was a problem loading the Songs"),
                   dismissButton: .default(Text("OK")))
         })
     }
