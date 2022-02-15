@@ -10,17 +10,21 @@ import SwiftUI
 struct ContentView: View {
     @State private var songs = [Song]()
     @State private var showingAlert = false
+    init () {
+        UITableView.appearance().backgroundColor = .green
+    }
+    
     var body: some View {
         NavigationView {
             List(songs) { song in
                 if let url = URL(string: song.track_url) {
                     Link(destination: url) {
-                    HStack {
-                        Text(song.position)
-                        Text("-")
-                        Text(song.track_title)
-                        Text("Streams:")
-                        Text(song.streams)
+                        HStack {
+                            Text(song.position)
+                            Text("-")
+                            Text(song.track_title)
+                            Text("Streams:")
+                            Text(song.streams)
                         }
                     }
                 }
